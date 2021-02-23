@@ -34,16 +34,16 @@ const Navbar = () => {
           </li>
           <li>
             <button className='link-btn' onMouseOver={displaySubmenu}>
-              developers
+              company
             </button>
           </li>
           <li>
             <button className='link-btn' onMouseOver={displaySubmenu}>
-              company
+              Q&A
             </button>
           </li>
         </ul>
-        <button className='btn signin-btn'>Sign in</button>
+        
       </div>
     </nav>
   );
