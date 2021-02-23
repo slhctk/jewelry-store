@@ -1,12 +1,19 @@
-import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
+import {  FaBook, FaBriefcase } from 'react-icons/fa';
+import { GiIntricateNecklace, GiHeartEarrings,GiPrimitiveNecklace } from 'react-icons/gi';
+import { VscFeedback } from 'react-icons/vsc';
+
 import React from 'react';
 const sublinks = [
+   {
+    page: 'Home',
+    links:[{}],
+  },
   {
     page: 'products',
     links: [
-      { label: 'necklaces', icon: <FaCreditCard />, url: '/products' },
-      { label: 'bracelets', icon: <FaCreditCard />, url: '/products' },
-      { label: 'earrings', icon: <FaCreditCard />, url: '/products' },
+      { label: 'necklaces', icon: <GiIntricateNecklace />, url: '/products' },
+      { label: 'bracelets', icon: <GiPrimitiveNecklace />, url: '/products' },
+      { label: 'earrings', icon: <GiHeartEarrings />, url: '/products' },
     ],
   },
   {
@@ -20,7 +27,7 @@ const sublinks = [
     page: 'company',
     links: [
       { label: 'about us', icon: <FaBriefcase />, url: '/products' },
-      { label: 'customers', icon: <FaBriefcase />, url: '/products' },
+      { label: 'customers', icon: <VscFeedback />, url: '/products' },
     ],
   },
 ];

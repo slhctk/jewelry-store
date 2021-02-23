@@ -233,7 +233,7 @@ Stripe Styles
     display: block;
     justify-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     height: 100%;
     display: grid;
@@ -406,6 +406,9 @@ Stripe Styles
 .submenu-center {
   display: grid;
   gap: 0.25rem 2rem;
+}
+.col-1 {
+  grid-template-columns: repeat(1, 1fr);
 }
 .col-2 {
   grid-template-columns: repeat(2, 1fr);

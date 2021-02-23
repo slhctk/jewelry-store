@@ -3,7 +3,7 @@ import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import { useGlobalContext } from './context';
 
-const Navbar = () => {
+const Home = () => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
   const displaySubmenu = (e) => {
     const page = e.target.textContent;
@@ -28,6 +28,11 @@ const Navbar = () => {
         </div>
         <ul className='nav-links'>
           <li>
+            <button className='link-btn' >
+             Home
+            </button>
+          </li>
+          <li>
             <button className='link-btn' onMouseOver={displaySubmenu}>
               products
             </button>
@@ -49,4 +54,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Home;
